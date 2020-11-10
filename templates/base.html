@@ -2,7 +2,7 @@
 <html>
 	<head>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
-    <link rel="stylesheet" href="{{ url_for('static',filename='styling/mystyle.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static',filename='styling/mystyles.css') }}">
 		<link rel="icon" href="{{url_for('static',filename='images/logo-redondo.png')}}">
         {% block head%}{% endblock %}
     </head>
@@ -14,6 +14,15 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
               <ul class="navbar-nav">
+                {% if page == "inicio" %}
+                    <li class="nav-item active">
+                    <b><a style="color: white;"  class="nav-link" href="/App">Inicio<span class="sr-only">(current)</span></a></b>
+                    </li>
+                {% else %}
+                    <li class="nav-item">
+                    <a style="color: white;" class="nav-link" href="/App">Inicio<span class="sr-only">(current)</span></a>
+                    </li>
+                {% endif %}
                 {% if page == "home" %}
                     <li class="nav-item active">
                     <b><a style="color: white;"  class="nav-link" href="/App">Aplicación<span class="sr-only">(current)</span></a></b>
