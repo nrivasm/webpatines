@@ -1,7 +1,41 @@
 {% extends "base.html" %}
 {% block head %}
-    <title>Nombre</title>
+    <title>EYTTS</title>
 {% endblock %}
 {% block body %}
-
+    <div class="container body-div">
+        <div class="body-subdiv row">
+            <div class="body-subdiv col">
+                <h1 style="margin-right:0px;font-size: 70px;">Enjoy your travel to school</h1>
+                <h3 style="margin-right:0px;color:darkgrey">La plataforma ecológica de alquiler de patinetes electricos de Corazonistas La Mina</h3>
+                <div style="margin-top: 10px;" class="row">
+                    <div style="padding-left: 15px !important;" class="body-subdiv col-">
+                        <button class="btn btn-lg btn-outline-primary rounded-pill">Empezar</button>
+                    </div>
+                    <div style="padding-left: 15px !important;" class="body-subdiv col-">
+                        <button class="btn btn-lg btn-outline-secondary rounded-pill">Aprender</button>
+                    </div>
+                </div>
+            </div>
+            <div style="text-align: right;padding-right: 50px;" class="body-subdiv col">
+                <img height="400px" width="400px" src="{{ url_for('static',filename='images/logo.jpeg') }}" alt="logo">
+            </div>
+        </div>
+    </div>
+    <div style="text-align: center;margin-left: 80px;margin-right: 80px;margin-top: 140px;">
+        <h2>¿Porqué EYTTS?</h2>
+    </div>
+    <div style="margin-top: 30px; margin-left: 80px;margin-right: 80px;" class="row">
+        <div class="col">
+            <img height="500px" width="267px" src="{{url_for('static',filename='images/container.png')}}" alt="">
+        </div>
+        <div class="col">
+            <h4>Un transporte <b style="color:var(--primary);">ecológico</b> para llegar puntual</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta interdum mollis. Phasellus iaculis, tortor sed pretium porttitor, risus nibh convallis risus, et elementum tellus lacus ut mi. Phasellus rhoncus nibh sodales ligula elementum, quis cursus neque tristique. Donec semper ac magna eget ornare. Ut ipsum massa, tempor in volutpat quis, interdum sed lorem. Ut dapibus auctor augue, at commodo nunc rutrum ac. Suspendisse a arcu vel erat lacinia lacinia. Sed quam leo, tristique ac dignissim id, cursus a augue.</p>
+            <h4>Un transporte ecológico para llegar puntual</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta interdum mollis. Phasellus iaculis, tortor sed pretium porttitor, risus nibh convallis risus, et elementum tellus lacus ut mi. Phasellus rhoncus nibh sodales ligula elementum, quis cursus neque tristique. Donec semper ac magna eget ornare. Ut ipsum massa, tempor in volutpat quis, interdum sed lorem. Ut dapibus auctor augue, at commodo nunc rutrum ac. Suspendisse a arcu vel erat lacinia lacinia. Sed quam leo, tristique ac dignissim id, cursus a augue.</p>
+            <h4>Un transporte ecológico para llegar puntual</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque porta interdum mollis. Phasellus iaculis, tortor sed pretium porttitor, risus nibh convallis risus, et elementum tellus lacus ut mi. Phasellus rhoncus nibh sodales ligula elementum, quis cursus neque tristique. Donec semper ac magna eget ornare. Ut ipsum massa, tempor in volutpat quis, interdum sed lorem. Ut dapibus auctor augue, at commodo nunc rutrum ac. Suspendisse a arcu vel erat lacinia lacinia. Sed quam leo, tristique ac dignissim id, cursus a augue.</p>
+        </div>
+    </div>
 {% endblock %}
