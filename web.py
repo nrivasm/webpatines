@@ -6,7 +6,7 @@ app.secret_key = "webchicles"
 
 @app.route("/")
 def home():
-    return render_template("index.html")
+    return render_template("index.html", page="inicio")
 
 @app.route("/App/")
 def aplicación():
